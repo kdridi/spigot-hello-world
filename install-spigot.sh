@@ -3,8 +3,8 @@
 set -e
 
 cd $(dirname $0)
-SPIGOT_DIR="$(pwd)/.deps/spigot"
-SPIGOT_VERSION="1.16.5"
+export SPIGOT_DIR="$(pwd)/.deps/spigot"
+export SPIGOT_VERSION="1.16.5"
 cd - >/dev/null
 
 

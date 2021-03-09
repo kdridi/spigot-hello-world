@@ -2,7 +2,7 @@ name: Hello
 version: 0.1
 author: kdridi
 main: spidot.hello.HelloPlugin
-api-version: 1.16.5
+api-version: 1.16
 commands:
-  ploof:
-    description: Usage /ploof help
+  hello:
+    description: Usage /hello help
