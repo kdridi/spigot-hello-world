@@ -24,3 +24,9 @@ hs_err_pid*
 
 # dependencies
 .deps
+
+# IDE
+.classpath
+.project
+.settings/
+/target/
