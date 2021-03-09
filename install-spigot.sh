@@ -18,3 +18,11 @@ if [[ ! -f "${SPIGOT_DIR}/spigot-${SPIGOT_VERSION}.jar" ]]; then
 	export MAVEN_OPTS="-Xmx2G"
 	java -Xmx2G -jar BuildTools.jar --rev "${SPIGOT_VERSION}"
 fi
+
+mvn install:install-file \
+   -Dfile="${SPIGOT_DIR}/spigot-${SPIGOT_VERSION}.jar" \
+   -DgroupId="spigot" \
+   -DartifactId="spigot" \
+   -Dversion="${SPIGOT_VERSION}" \
+   -Dpackaging="jar" \
+   -DgeneratePom=true
