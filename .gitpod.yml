@@ -1,0 +1,5 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: ./install-spigot.sh && mvn install -DskipTests=false
